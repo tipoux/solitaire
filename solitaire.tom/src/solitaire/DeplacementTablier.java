@@ -6,7 +6,7 @@ public class DeplacementTablier extends tablier
 {
 	private int ligne1, colon1, ligne2, colon2;
 	private Scanner sc;
-	private int nbPions = (getNbL() * getNbC()) - 1;
+	private int nbPions = (getNbL() * getNbC()) - 17;
 
 	public DeplacementTablier(int nbL, int nbC) 
 	{

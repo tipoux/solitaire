@@ -2,9 +2,9 @@ package solitaire;
 
 public class tablier extends StructureTablier
 {
-	private String pleine = "(X)";
-	private String vide = "( )";
-	private String interdit = "   ";
+	private String PLEINE = "(X)";
+	private String VIDE = "( )";
+	private String INTERDIT = "   ";
 	
 	public tablier(int nbL, int nbC) 
 	{
@@ -21,11 +21,11 @@ public class tablier extends StructureTablier
 				
 				switch(getTablierAnglais()[i][j])
 				{// TODO créer une fonction toChar(i, j)
-					case 0 : pion = interdit;
+					case 0 : pion = INTERDIT;
 						break;
-					case 1 : pion = pleine;
+					case 1 : pion = PLEINE;
 						break;
-					case 2 : pion = vide;
+					case 2 : pion = VIDE;
 						break;
 				}
 				System.out.print(pion);

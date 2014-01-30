@@ -15,18 +15,27 @@ public class DeplacementTablier extends tablier
 	
 	public void Saisis()
 	{
-		sc = new Scanner(System.in);
-		System.out.println("Rentrez la ligne de depart :");
-	    ligne1 = sc.nextInt();
+		try
+		{
+			sc = new Scanner(System.in);
+			System.out.println("Rentrez la ligne de depart :");
+			ligne1 = sc.nextInt();
 	   
-	    System.out.println("Rentrez la colonne de depart :");
-	    colon1 = sc.nextInt();
+			System.out.println("Rentrez la colonne de depart :");
+			colon1 = sc.nextInt();
 	    
-	    System.out.println("Rentrez la ligne d'arrivee :");
-	    ligne2 = sc.nextInt();
+			System.out.println("Rentrez la ligne d'arrivee :");
+			ligne2 = sc.nextInt();
 	    
-	    System.out.println("Rentrez la colonne d'arrivee :");
-	    colon2 = sc.nextInt();
+			System.out.println("Rentrez la colonne d'arrivee :");
+			colon2 = sc.nextInt();
+	    }
+		
+		catch (Exception e) 
+		{
+            System.out.println("Vous devez saisir un chiffre !");
+        }
+		
 	}
 	
 	public boolean jouer()
@@ -41,6 +50,7 @@ public class DeplacementTablier extends tablier
 		if((ligne1 == ligne2 && absColon == 2) || (colon1 == colon2 && absLigne == 2))
 		{
 			boolean joue = getTablierAnglais()[millieuLigne][millieuColon] == 1 && getTablierAnglais()[ligne2][colon2] == 2;
+			if(joue)
 			{
 				getTablierAnglais()[millieuLigne][millieuColon] = 2;
 				getTablierAnglais()[ligne1][colon1] = 2;

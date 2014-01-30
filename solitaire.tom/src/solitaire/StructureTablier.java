@@ -56,27 +56,27 @@ public class StructureTablier
 		for (int i = 0; i < getNbL(); i++) 
 		{
 			for( int j = 0; j < getNbC(); j++)  
-				getTablierAnglais()[i][j] = 0;
+				setTablierAnglais(i,j,0);
 		}
 		
 		for (int i = 0; i < 2; i++) 
 		{
 			for( int j = 2; j < 5; j++)  
-				getTablierAnglais()[i][j] = 1;
+				setTablierAnglais(i,j,1);
 		}
 		
 		for (int i = 2 ;i < 5; i++) 
 		{
 			for( int j = 0; j < getNbC(); j++)  
-				getTablierAnglais()[i][j] = 1;
+				setTablierAnglais(i,j,1);
 		}
 		
 		for (int i = 5; i < getNbL(); i++) 
 		{
 			for( int j = 2; j < 5; j++)  
-				getTablierAnglais()[i][j] = 1;
+				setTablierAnglais(i,j,1);
 		}
 		
-		getTablierAnglais()[getNbL()/2][getNbC()/2] = 2;
+		setTablierAnglais(getNbL()/2,getNbC()/2,2);
 	}
 }

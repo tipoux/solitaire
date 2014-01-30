@@ -19,7 +19,7 @@ public class tablier extends StructureTablier
 			{
 				String pion = "   ";
 				
-				switch(getTablierAnglais()[i][j])
+				switch(getTablierAnglais(i,j))
 				{// TODO créer une fonction toChar(i, j)
 					case 0 : pion = INTERDIT;
 						break;

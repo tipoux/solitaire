@@ -7,7 +7,7 @@ public class MainTablier
 		DeplacementTablier a = new DeplacementTablier(7,7);
 		a.Structure();
 		a.affiche();
-		for(int i = 0; i < 49; i++)
+		for(int i = 0; i < 32; i++)
 		{
 			a.jouer();
 			a.affiche();

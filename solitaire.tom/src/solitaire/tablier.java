@@ -2,7 +2,7 @@ package solitaire;
 
 public class tablier extends StructureTablier
 {
-	private String PLEINE = "(X)";
+	private String PLEINE = "(Y)";
 	private String VIDE = "( )";
 	private String INTERDIT = "   ";
 	

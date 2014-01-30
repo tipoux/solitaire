@@ -42,6 +42,15 @@ public class StructureTablier
 		this.tablierAnglais = tablierAnglais;
 	}
 	
+	public int getTablierAnglais(int i, int j) 
+	{
+		return tablierAnglais[i][j];
+	}
+
+	public void setTablierAnglais(int i, int j, int valeur) 
+	{
+		this.tablierAnglais[i][j]= valeur;
+	}
 	public void Structure()
 	{	
 		for (int i = 0; i < getNbL(); i++) 
